@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+mkdir -p "${1}"
+cr=$'\n'
+slug="Package ${1}${cr}package ${1}"
+echo "${slug}" > "${1}/${1}.go"
+echo "${slug}" > "${1}/${1}_test.go"
